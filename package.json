@@ -12,5 +12,8 @@
   },
   "author": "Joaquin Godoy",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/JoaquinGodoy/first-repository#readme"
+  "homepage": "https://bitbucket.org/JoaquinGodoy/first-repository#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
