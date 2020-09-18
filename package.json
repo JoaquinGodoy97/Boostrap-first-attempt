@@ -1,0 +1,16 @@
+{
+  "name": "first-repository",
+  "version": "1.0.0",
+  "description": "Primer projecto de Node Js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://JoaquinGodoy@bitbucket.org/JoaquinGodoy/first-repository.git"
+  },
+  "author": "Joaquin Godoy",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/JoaquinGodoy/first-repository#readme"
+}
