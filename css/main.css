@@ -1,0 +1,30 @@
+.jumbotron {
+  background-image: url(Images/1.jpg);
+  color: white;
+  border-radius: 0%;
+}
+  .btn-primary {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-color: thistle;
+  }
+  .btn-primary:hover {
+    background-color: rgb(1, 77, 1);
+    color: rgb(185, 185, 185);
+    border-color: rgb(1, 77, 1);
+  }
+footer {
+   padding: 10px 10px 0 10px;
+   background-color: green;
+    margin-bottom: 0px;
+    margin-top: 10px;
+ }
+
+ .blog-card {
+     flex: 1 150px;
+     padding: 2px 5px 2px 5px;
+ }
+
+ .btn-reserva {
+   width: 100%;
+ }

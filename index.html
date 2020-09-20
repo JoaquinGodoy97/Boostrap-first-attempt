@@ -7,61 +7,141 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <title>Arianna's Blog</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Blog de prueba</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Blog</h1>
+      <h1>Blog de plantas</h1>
     </div>
     <div class="container">
-      <div class="d-flex flex-wrap-reverse">
-        <div class="col-sm-4">
+      <div class="d-flex flex-wrap justify-content-between">
+        <div class="blog-card col-sm-4">
           <p>
-            <h3>Plants and Fauna</h3>
-            <p>Fotos de plantas</p>
-            <ul class="align-content-lg-start">
-              <li >Groups</li>
-              <li>Questions</li>
-              </ul>
-              <button class="align-self-lg-center btn" >Buscar</button>
+            <h3>¿Qué son las plantas de jardín?</h1>
+            <p>
+              <i>
+              Las plantas de jardín son mayormente encontradas en nuestros hogares, en jardines hogareños.
+              </i>
+            </p>
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="blog-card col-sm-4">
           <p>
-            <h3>Arboles</h3>
-            <p>Where do we find them?</p>
-            <button class="align-self-lg-center btn" >Buscar</button>
+          <i>
+            <h3>¿Plantas salvajes?</h1>
+            <p>Son las plantas que nos encontramos fuera de nuestros hogares, mayormente hierbas.
+            </i>
+            </p>
           </p>
         </div>
-        <div class="col-sm-4" >
+        <div class="blog-card col-sm-4 ">
           <p>
-            <h3>Root</h3>
-            <p>What are roots abouts</p>
-            <button class=" align-self-lg-center btn" >Buscar</button>
+            <h3>¿Son importante las plantas?</h3>
+            <p>
+              <i>
+              Obviamente, nos ayudan a limpiar el aire que normalmente respiramos.
+              </i>
+            </p>
           </p>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="d-flex">
-        <div class="row">
-          <div class="col-sm-4">
-            <p>Perros</p>
+
+    <div class="d-flex flex-wrap flex-row-reverse">
+        <div class="blog-card d-flex flex-column justify-content-between">
+          <div>
+            <h4>Plantas carnivoras</h4>
+            <p>Plantas que se alimentan de insectos</p>
           </div>
-          <div class="col-sm-4">
-            <p>perros</p>
+        <div>
+      <button class="btn btn-primary btn-reserva">Entrar</button>
+      </div>
+      </div>
+        <div class="blog-card d-flex flex-column justify-content-between">
+          <div>
+            <h4>Plantas acuáticas</h4>
+            <p>Son las plantas que sobreviven en el agua</p>
           </div>
-          <div class="col-sm-4">
-            <p>perros</p>
+          <div>
+            <button class="btn btn-primary btn-reserva">Entrar</button>
           </div>
         </div>
+        <div class="blog-card d-flex flex-column justify-content-between">
+          <div> 
+            <h4>Plantas terrestres</h4>
+            <p>Plantas que usualmente nos encontramos en el día a día</p>
+          </div>
+            <div>
+              <button class="btn btn-primary btn-reserva">Entrar</button>
+            </div>
+          </div>
+          <div class="blog-card d-flex flex-column justify-content-between">
+            <div>
+              <h4>Enredaderas</h4>
+              <p>Se aferran a otros organismos para sobrevivir</p>
+            </div>
+            <div>
+              <button class="btn btn-primary btn-reserva">Entrar</button>
+            </div>
+        </div>
+        <div class="blog-card d-flex flex-column justify-content-between">
+          <div> 
+            <h4>Hongos</h4>
+            <p>Viven de una forma parasitaria</p>
+          </div>
+          <div>
+              <button class="btn btn-primary btn-reserva">Entrar</button>
+          </div>
+        </div>
+        <div class="blog-card d-flex flex-column justify-content-between">
+          <div>
+            <h4>Algas</h4>
+            <p>Plantas generalmente marinas</p>
+          </div>
+          <div>
+              <button class="btn btn-primary btn-reserva">Entrar</button>
+          </div>
+        </div>
+      <div class="blog-card d-flex flex-column justify-content-between">
+        <div>
+            <h4>Raíces</h4>
+            <p>Todo lo que se encuentra sumergido o que no podemos ver a menos que arranquemos el tallo</p>
+        </div>
+          <div>
+            <button class="btn btn-primary btn-reserva">Entrar</button>
+          </div>
+        </div>
+    </div>
+
+ <footer>
+   <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <h4>Redes</h4>
+        <a class="text-white" href="www.facebok.com">Face</a>
+        <a class="text-white" href="www.twitter.com">Twitter<T/a>
+        <a class="text-white" href="www.instragram.com">Instagram</a>
       </div>
-    </footer>
+      <div class="col-sm-4 d-flex flex-column">
+        <address>
+          <h4>Oficinas Cabildo 240</h4>
+          <p>Al frente del gran galpon</p>
+          <p>Oficinas</p>
+          <p>Galpones</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column">
+        <h4>Recomendaciones</h4>
+        <p>Plantas hogar</p>
+        <p>Cuidados</p>
+      </div>
+   </div>
+ </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
   </body>
 </html>
