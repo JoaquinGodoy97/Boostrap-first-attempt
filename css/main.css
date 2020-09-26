@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: url(Images/1.jpg);
+  background-image: url(images/1.jpg);
   color: white;
   border-radius: 0%;
   margin-top: 50px;
@@ -26,13 +26,21 @@
     border-color: rgb(1, 77, 1);
   }
 
+  .blog-card-header {
+    background-color: white;
+     flex: 1 200px;
+     margin-top: 10px;
+ }
+
  .blog-card {
-     flex: 1 150px;
-     padding: 2px 5px 2px 5px;
+    background-color: rgb(209, 209, 209);
+     flex: 1 200px;
+     margin-top: 10px;
  }
 
  .btn-reserva {
    width: 100%;
+   border-radius: 0px;
  }
 
  .footerColumn {
@@ -45,7 +53,8 @@
   
  footer {
   padding: 10px 10px 0 10px;
-  background-color: green;
+  color: black;
+  background-color: rgb(14, 87, 14);
    margin-bottom: 0px;
    margin-top: 10px;
 }
