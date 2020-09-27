@@ -31,6 +31,10 @@
     <div class="jumbotron">
       <h1>Blog de plantas</h1>
     </div>
+    
+      
+    
+
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -68,11 +72,11 @@
           </p>
         </div>
       </div>
-    </div>
+    
 
-    <div class="card-columns"> <!-- he took off d-flex flex-wrap flex-row-->
+    <div class="d-flex flex-wrap flex-row"> <!-- he took off d-flex flex-wrap flex-row-->
       <!-- I deleted d-flex to each one and fixed the margintop aprearing downwards-->
-      <div class="card blog-card flex-column justify-content-between mr-2">
+      <div class="card blog-card justify-content-between mr-2">
         <div class="card-body"> 
           <img class="card-img-top pb-2" src="css/images/2fabaceae.jpg" alt="fabacae">
           <h5 class="card-title">Fabaceae</h5>
@@ -83,7 +87,7 @@
       <button class="btn btn-primary ">Entrar</button>
       </div>
       </div>
-      <div class="card blog-card flex-column justify-content-between mr-2">
+      <div class="card blog-card d-flex justify-content-between mr-2">
         <div class="card-body"> 
           <img class="card-img-top pb-2" src="css/images/3daucus_.jpg" alt="Daucus">
           <h5 class="card-title">Daucus</h5>
@@ -94,7 +98,7 @@
             <button class="btn btn-primary">Entrar</button>
           </div>
         </div>
-        <div class="card blog-card  flex-column justify-content-between mr-2">
+        <div class="card blog-card d-flex justify-content-between mr-2">
           <div class="card-body"> 
             <img class="card-img-top pb-2" src="css/images/Apiaceae.jpg" alt="Apiaceae">
             <h5 class="card-title">Apiaceae</h5>
@@ -105,7 +109,13 @@
               <button class="btn btn-primary">Entrar</button>
             </div>
           </div>
-        <div class="card blog-card flex-column justify-content-between mr-2">
+          <div class="container">
+            <div class="row pb-4">
+            <img src="css/images/pomodori.jpg" class="img-fluid  pt-4" alt=""> <!-- el img=fluid indica la forma responsiva -->
+                  <p><i>Pomodiri that was taking from the hills</i></p>
+          </div>
+          </div>
+        <div class="card blog-card d-flex justify-content-between mr-2">
           <div class="card-body"> 
             <img class="card-img-top pb-2" src="css/images/Prunus.jpg" alt="Prunus">
             <h5 class="card-title">Prunus</h5>
@@ -116,7 +126,7 @@
               <button class="btn btn-primary">Entrar</button>
             </div>
         </div>
-        <div class="card blog-card flex-column justify-content-between mr-2">
+        <div class="card blog-card d-flex justify-content-between mr-2">
           <div class="card-body"> 
             <img class="card-img-top pb-2" src="css/images/Junceum.jpg" alt="Junceum">
             <h5 class="card-title">Spartium</h5>
@@ -127,7 +137,7 @@
               <button class="btn btn-primary">Entrar</button>
           </div>
         </div>
-        <div class="card blog-card flex-column justify-content-between mr-2">
+        <div class="card blog-card d-flex justify-content-between mr-2">
           <div class="card-body"> 
             <img class="card-img-top pb-2" src="css/images/nocciolo.jpg" alt="nocciolo">
             <h5 class="card-title">Nocciòlo</h5>
@@ -138,6 +148,7 @@
               <button class="btn btn-primary">Entrar</button>
           </div>
         </div>
+        
         <!--
         <div class="card blog-card d-flex flex-column justify-content-between mr-2">
           <div class="card-body"> 
@@ -151,7 +162,8 @@
         </div>
         -->
     </div>
-
+  </div>
+ 
  <footer>
    <div class="row">
       <div class="col-sm-4 d-flex flex-column footerColumn">
@@ -174,6 +186,7 @@
         <a class="text-white" href="">Cuidados especiales</a>
       </div>
    </div>
+   
  </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
