@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"/>
     <title>Blog de prueba</title>
   </head>
 
@@ -41,8 +41,22 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
-      <div class="d-flex flex-wrap justify-content-between">
-        <div class="blog-card-header col-sm-4">
+      
+      <div class="row">
+          <div class="col-sm-4 pb-3">
+            <button class="btn btn-hidden-index col-md-4 shadow-sm" type="button" data-toggle="collapse" data-target="#queSonPlantas" aria-expanded="true" aria-controls="multiCollapse1">¿Qué son las plantas de jardín?</button>
+          </div>
+          <div class="col-sm-4 pb-3">
+            <button class="btn btn-hidden-index col-md-4 shadow-sm" type="button" data-toggle="collapse" data-target="#wildPlants" aria-expanded="true" aria-controls="multiCollapse2">¿Plantas salvajes?</button>
+          </div>
+          <div class="col-sm-4 pb-3">
+            <button class="btn btn-hidden-index col-md-4 shadow-sm" type="button" data-toggle="collapse" data-target="#plantsImportance" aria-expanded="true" aria-controls="multiCollapse3">¿Son importante las plantas?</button>
+          </div>
+      </div> 
+    
+      <div class="row justify-content-between shadow-lg">
+
+      <div class="blog-card-header col-sm-4 collapse multi-collapse" data-toggle="collapse" id="queSonPlantas">
           <p>
             <h3>¿Qué son las plantas de jardín?</h1>
             <p>
@@ -52,7 +66,7 @@
             </p>
           </p>
         </div>
-        <div class="blog-card-header col-sm-4">
+        <div class="blog-card-header col-sm-4 collapse multi-collapse" data-toggle="collapse" id="wildPlants">
           <p>
           <i>
             <h3>¿Plantas salvajes?</h1>
@@ -61,7 +75,7 @@
             </p>
           </p>
         </div>
-        <div class="blog-card-header col-sm-4 ">
+        <div class="blog-card-header col-sm-4 collapse multi-collapse" data-toggle="collapse" id="plantsImportance">
           <p>
             <h3>¿Son importante las plantas?</h3>
             <p>
@@ -72,11 +86,10 @@
           </p>
         </div>
       </div>
-    
 
-    <div class="d-flex flex-wrap flex-row"> <!-- he took off d-flex flex-wrap flex-row-->
+    <div class="d-flex flex-wrap flex-row" > <!-- he took off d-flex flex-wrap flex-row-->
       <!-- I deleted d-flex to each one and fixed the margintop aprearing downwards-->
-      <div class="card blog-card justify-content-between mr-2">
+      <div class="card blog-card justify-content-between mr-2 shadow-lg">
         <div class="card-body"> 
           <img class="card-img-top pb-2" src="css/images/2fabaceae.jpg" alt="fabacae">
           <h5 class="card-title">Fabaceae</h5>
@@ -188,11 +201,12 @@
    </div>
    
  </footer>
+ 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+
   </body>
 </html>
