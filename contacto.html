@@ -1,123 +1,128 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"/>
-    <title>Blog de prueba</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Busqueda</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggler navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./about.html">Quienes somos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Centros de difusion</a></li>
-          <li class="nav-item"><a class="nav-link" href="./reciclaje.html">Reciclaje</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
-        </ul>
-      </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+  <title>Blog de prueba</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="./index.html">Busqueda</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggler navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">Quienes somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Centros de difusion</a></li>
+        <li class="nav-item"><a class="nav-link" href="./reciclaje.html">Reciclaje</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h1>Blog de plantas</h1>
+  </div>
+  <div class="container pb-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+      </ol>
     </nav>
-    <div class="jumbotron">
-      <h1>Blog de plantas</h1>
+
+    <h1>
+      Dejame tu comentario
+    </h1>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" />
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="surname">Apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Escriba su apellido" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="E-mail" />
+        </label>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-sm-9">
+          <label for="domicilio">Domicilio</label>
+          <input type="text" class="form-control" id="domicilio" placeholder="Escriba su domicilio" />
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="surname">Provincia</label>
+          <select id="provincia" class="form-control">
+            <option selected>Capital Federal</option>
+            <option selected>Gran Buenos Aires</option>
+            <option selected>Formosa</option>
+            <option selected>Santiago del Estero</option>
+          </select>
+        </div>
+      </div>
+      <div class="from-group">
+        <label form="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" class="form-control" rows="10"></textarea>
+      </div>
+      <div class="from-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label for="gridCheck" class="form-check-label pb-2">
+            Quiero que me contacten
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-outline-primary">Enviar</button>
+    </form>
+  </div>
+
+  <footer class="shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column footerColumn">
+          <h4><span class="oi oi-wifi pr-3"></span>Redes</h4>
+          <a class="text-black" href="www.facebok.com">Face</a>
+          <a class="text-black" href="www.twitter.com">Twitter<T /a>
+              <a class="text-black" href="www.instragram.com">Instagram</a>
+        </div>
+        <div class="col-sm-4 flex-wrap flex-column footerColumn">
+          <address>
+            <h4>Oficinas Cabildo 240</h4>
+            <p>Galpon/Terraza</p>
+            <p><span class="oi oi-inbox"></span>florayfauna@gmail.com</p>
+            <p><span class="oi oi-phone"></span>+54 115888482</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column footerColumn">
+          <a class="text-black" href="">Fertilizantes</a>
+          <a class="text-black" href="">Plantas hogar</a>
+          <a class="text-black" href="">Cuidados especiales</a>
+        </div>
+      </div>
     </div>
-    <div class="container pb-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-          </ol>
-        </nav>
+  </footer>
 
-        <h1>
-          Dejame tu comentario
-        </h1>
-
-        <form>
-          <div class="form-row">
-            <div class="form-group col-sm-6">
-              <label for="name">Nombre</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre"/>
-            </div>
-            <div class="form-group col-sm-6">
-              <label for="surname">Apellido</label>
-              <input type="text" class="form-control" id="apellido" placeholder="Escriba su apellido"/>
-            </div>
-          </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="E-mail"/>
-              </label>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-sm-9">
-                <label for="domicilio">Domicilio</label>
-                <input type="text" class="form-control" id="domicilio" placeholder="Escriba su domicilio"/>
-              </div>
-              <div class="form-group col-sm-3">
-                <label for="surname">Provincia</label>
-                <select id="provincia" class="form-control">
-                  <option selected>Capital Federal</option>
-                  <option selected>Gran Buenos Aires</option>
-                  <option selected>Formosa</option>
-                  <option selected>Santiago del Estero</option>
-                </select>
-              </div>
-            </div>
-            <div class="from-group">
-              <label form="comentario">Comentario</label>
-              <textarea name="comentario" id="comentario" class="form-control" rows="10"></textarea>
-            </div>
-            <div class="from-group">
-             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label for="gridCheck" class="form-check-label pb-2">
-                Quiero que me contacten
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-outline-primary">Enviar</button>
-        </form>
-    </div>
-
- <footer>
-   <div class="row">
-      <div class="col-sm-4 d-flex flex-column footerColumn">
-        <h4><span class="oi oi-wifi"></span>Redes</h4>
-        <a class="text-white" href="www.facebok.com">Face</a>
-        <a class="text-white" href="www.twitter.com">Twitter<T/a>
-        <a class="text-white" href="www.instragram.com">Instagram</a>
-      </div>
-      <div class="col-sm-4 flex-wrap flex-column footerColumn">
-        <address>
-          <h4>Oficinas Cabildo 240</h4>
-          <p><span class="oi oi-inbox"></span>florayfauna@gmail.com</p>
-          <p><span class="oi oi-phone"></span>+54 115888482</p>
-          <p>Galpones</p>
-        </address>
-      </div>
-      <div class="col-sm-4 d-flex flex-column footerColumn">
-        <a class="text-white" hr ef="">Fertilizantes</a>
-        <a class="text-white" href="">Plantas hogar</a>
-        <a class="text-white" href="">Cuidados especiales</a>
-      </div>
-   </div>
- </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js</script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js</script>
   </body>
 </html>

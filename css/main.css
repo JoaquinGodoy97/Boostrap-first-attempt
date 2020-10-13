@@ -12,13 +12,47 @@
     width: 100%;
    border-radius: 5px;
   }
+  .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: rgba(64, 180, 41, 0.5);
+    background-color:  rgb(1, 56, 1);
+  }
+  
+  .btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: rgb(59, 87, 59);
+    border-color: rgb(61, 116, 61);
+    box-shadow: rgb(69, 119, 69);
+  }
 
+  .btn-primary::selection {
+    background-color:  rgb(1, 56, 1);
+  }
+
+  .btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(31, 105, 43, 0.5);
+  }  
+
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    border-color: rgb(151, 151, 151);
+}
+
+  .btn-primary:hover {
+    background-color: rgb(1, 77, 1);
+    color: rgb(255, 255, 255);
+    border-color: rgb(1, 77, 1);
+  }
+
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #306337;
+  }
   .btn-hidden-index {
     background-color: white;
     color: black;
     border-color: thistle;
     border-radius: 5px;
     max-width: 50%;
+    word-wrap: break-word; 
+    max-width:150px;
   }
 
   .btn-hidden-index:hover {
@@ -34,11 +68,7 @@
   border-radius: 5px;
 }
 
-  .btn-primary:hover {
-    background-color: rgb(1, 77, 1);
-    color: rgb(218, 218, 218);
-    border-color: rgb(1, 77, 1);
-  }
+
 
   .btn-link {
     background-color: white;
@@ -68,6 +98,12 @@
      flex: 1 200px;
      margin-top: 10px;
  }
+
+ .blog-card-contact {
+  background-color: rgb(209, 209, 209);
+  flex: 1 200px;
+  margin-top: 10px;
+ }
 /*
  .btn-reserva {
     width: 100%;
@@ -93,7 +129,7 @@
 }
 
 a {
-  color: #5f8bbb;
+  color: #657688;
   text-decoration: none;
   background-color: transparent;
 }
@@ -101,7 +137,7 @@ a {
  footer {
   padding: 10px 10px 0 10px;
   color: black;
-  background-color: rgb(14, 87, 14);
+  background-color: white;
    margin-bottom: 0px;
    margin-top: 10px;
 }
