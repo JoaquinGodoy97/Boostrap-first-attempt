@@ -1,0 +1,122 @@
+.jumbotron {
+  background-image: url(images/1.jpg);
+  color: white;
+  border-radius: 0%;
+  margin-top: 50px;
+  margin-bottom: 0px; }
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border-color: thistle;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 0 0.1rem; }
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: #66cc66;
+  background-color: #014209; }
+
+.btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #306337;
+  border-color: #306337;
+  box-shadow: #66cc66;
+  box-shadow: 0 0 0 0.1rem #306337; }
+
+.btn-primary::selection {
+  background-color: #014209; }
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  border-color: #979797; }
+
+.btn-primary:hover {
+  background-color: #014209;
+  color: white;
+  border-color: #014209; }
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #306337; }
+
+.btn-hidden-index {
+  background-color: white;
+  color: black;
+  border-color: thistle;
+  border-radius: 5px;
+  max-width: 50%;
+  word-wrap: break-word;
+  max-width: 150px; }
+
+.btn-hidden-index:hover {
+  background-color: black;
+  color: #dadada;
+  border-color: white; }
+
+.btn-hidden-index:active {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-radius: 5px; }
+
+.btn-link {
+  background-color: white; }
+
+.btn-outline-primary {
+  background-color: white;
+  color: black;
+  border-color: black; }
+
+.btn-outline-primary:hover {
+  background-color: #178125;
+  color: white;
+  border-color: #014209; }
+
+.blog-card-header {
+  background-color: white;
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.blog-card {
+  background-color: #d1d1d1;
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.blog-card-contact {
+  background-color: #d1d1d1;
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+/*
+  .btn-reserva {
+    width: 100%;
+    border-radius: 0px;
+  }
+*/
+.footerColumn {
+  padding-top: 12px; }
+
+.spanTextAbout {
+  padding-bottom: 100px; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: black; }
+
+.nav-pills .nav-link:hover {
+  color: #fff;
+  background-color: #178125; }
+
+a {
+  color: #657688;
+  text-decoration: none;
+  background-color: transparent; }
+
+footer {
+  padding: 10px 10px 0 10px;
+  color: black;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 0px; }

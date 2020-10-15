@@ -1,49 +1,57 @@
-.jumbotron {
-  background-image: url(images/1.jpg);
-  color: white;
-  border-radius: 0%;
-  margin-top: 50px;
+$green:  #178125;
+$darkgreen: #014209;
+$palegreen: #306337;
+$lightpalegreen: #66cc66;
 
-}
+  @mixin margenes($top, $bottom) {
+      margin-top: $top;
+      margin-bottom: $bottom;
+  }
+
+.jumbotron {
+    background-image: url(images/1.jpg);
+    color: white;
+    border-radius: 0%;
+    @include margenes(50px, 0px)
+  
+  }
   .btn-primary {
     background-color: black;
     color: rgb(255, 255, 255);
     border-color: thistle;
     width: 100%;
-   border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0.1rem
   }
   .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: rgba(64, 180, 41, 0.5);
-    background-color:  darkgreen;
+    box-shadow: $lightpalegreen;
+    background-color:  $darkgreen;
   }
   
   .btn-primary.focus, .btn-primary:focus {
     color: #fff;
-    background-color: palegreen;
-    border-color: palegreen;
-    box-shadow: palegreen;
+    background-color: $palegreen;
+    border-color: $palegreen;
+    box-shadow: $lightpalegreen;
+    box-shadow: 0 0 0 0.1rem $palegreen;
   }
 
   .btn-primary::selection {
-    background-color: darkgreen;
+    background-color: $darkgreen;
   }
-
-  .btn-primary.focus, .btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem palegreen;
-  }  
 
   .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     border-color: rgb(151, 151, 151);
 }
 
   .btn-primary:hover {
-    background-color: darkgreen;
+    background-color: $darkgreen;
     color: rgb(255, 255, 255);
-    border-color: darkgreen;
+    border-color: $darkgreen;
   }
 
   .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    background-color: palegreen;
+    background-color: $palegreen;
   }
   .btn-hidden-index {
     background-color: white;
@@ -80,50 +88,50 @@
   }
 
   .btn-outline-primary:hover {
-    background-color: green;
+    background-color: $green;
     color: white;
-    border-color: darkgreen;
+    border-color: $darkgreen;
   }
 
   .blog-card-header {
     background-color: white;
-     flex: 1 200px;
-     margin-top: 10px;
- }
+      flex: 1 200px;
+      @include margenes(10px, 0px)
+  }
 
- .blog-card {
+  .blog-card {
     background-color: rgb(209, 209, 209);
-     flex: 1 200px;
-     margin-top: 10px;
- }
+      flex: 1 200px;
+      @include margenes(10px, 0px)
+  }
 
- .blog-card-contact {
+  .blog-card-contact {
   background-color: rgb(209, 209, 209);
   flex: 1 200px;
-  margin-top: 10px;
- }
+  @include margenes(10px, 0px)
+  }
 /*
- .btn-reserva {
+  .btn-reserva {
     width: 100%;
-   border-radius: 0px;
- }
+    border-radius: 0px;
+  }
 */
- .footerColumn {
-   padding-top: 12px;
- }
+  .footerColumn {
+    padding-top: 12px;
+  }
 
- .spanTextAbout {
-   padding-bottom: 100px;
- }
+  .spanTextAbout {
+    padding-bottom: 100px;
+  }
 
- .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
   background-color: black;
 }
 
 .nav-pills .nav-link:hover {
   color: #fff;
-  background-color: green;
+  background-color: $green;
 }
 
 a {
@@ -132,10 +140,9 @@ a {
   background-color: transparent;
 }
 
- footer {
+  footer {
   padding: 10px 10px 0 10px;
   color: black;
   background-color: white;
-   margin-bottom: 0px;
-   margin-top: 10px;
+  @include margenes(10px, 0px)
 }

@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Blog de prueba</title>
 </head>
 
@@ -235,7 +235,7 @@
               <p class="card-text">Recibiras un correo de confirmacion de subscripcion dentro de las 72hs</p>
             </div>
             <div class="col-sm-12 text-center">
-              <button class="btn btn-outline-dark " data-toggle="modal" data-target="#exampleModal">Entrar</button>
+              <button id="contactoBtn" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Contacta</button>
             </div>
           </div>
           <div class="col-sm-4"></div>
@@ -267,8 +267,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" data-toggle="popover" title="Sugerencia"
-              data-content="Si te interesa puedes enviarnos recomendaciones" class="btn btn-success">Enviar</button>
+            <button type="button" class="btn btn-success">Enviar</button>
           </div>
         </div>
       </div>
@@ -294,7 +293,7 @@
         <div class="col-sm-4 d-flex flex-column footerColumn">
           <h4><span class="oi oi-wifi pr-3"></span>Redes</h4>
           <a class="text-black" href="www.facebok.com">Face</a>
-          <a class="text-black" href="www.twitter.com">Twitter<T /a>
+          <a class="text-black" href="www.twitter.com">Twitter</a>
               <a class="text-black" href="www.instragram.com">Instagram</a>
         </div>
         <div class="col-sm-4 flex-wrap flex-column footerColumn">
@@ -324,10 +323,20 @@
       $('[data-toggle="popover"]').popover()
       $('.carousel').carousel({
         interval: 2000
-      })
-    })
-  </script>
+      });
 
+      $('#exampleModal').on('show.bs.modal', function (e){
+        console.log("el modal se esta mostrando");
+
+        $('#contactoBtn').removeClass('btn-outline-dark');
+        $('#contactoBtn').addClass('btn-outline-success');
+        $('#contactoBtn').prop('disabled', true);
+
+      });
+
+    });
+  </script>
+  
 </body>
 
 </html>
