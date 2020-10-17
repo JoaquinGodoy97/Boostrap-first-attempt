@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- build:css ./dist/index.html-->
+  <!-- build:css css/style.css-->
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css" />
@@ -276,19 +276,6 @@
     </div>
   </div>
 
-  <!--
-        <div class="card blog-card d-flex flex-column justify-content-between mr-2">
-          <div class="card-body"> 
-            <h5 class="card-title">Raíces</h5>
-            <h6 class="card-subtitle text-muted"></h6>
-            <p class="card-text">Todo lo que se encuentra sumergido o que no podemos ver a menos que arranquemos el tallo</p>
-        </div>
-          <div>
-            <button class="btn btn-primary btn-reserva">Entrar</button>
-          </div>
-        </div>
-        -->
-
   <footer class="shadow-lg">
     <div class="container">
       <div class="row">
@@ -317,30 +304,12 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   
-  <!-- build:js ./dist/index.js -->
+  <!-- build:js js/optimized.js -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-      $('[data-toggle="popover"]').popover()
-      $('.carousel').carousel({
-        interval: 2000
-      });
-
-      $('#exampleModal').on('show.bs.modal', function (e){
-        console.log("el modal se esta mostrando");
-
-        $('#contactoBtn').removeClass('btn-outline-dark');
-        $('#contactoBtn').addClass('btn-outline-success');
-        $('#contactoBtn').prop('disabled', true);
-
-      });
-
-    });
-  </script>
+  <script src="./js/main.js"></script>
   <!-- endbuild -->
-</body>
-
-</html>
+  
+  </body> 
+</html> 

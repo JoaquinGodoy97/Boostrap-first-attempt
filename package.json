@@ -5,14 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
-    "scss": "node-sass -o F:/Workplace/Curso/Boostrap/Repositorio/first-repository/css/ F:/Workplace/Curso/Boostrap/Repositorio/first-repository/css",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "imagemin": "imagemin \"./css/images/*\" --out-dir \"./dist/images\"",
-    "clean": "rimraf ./dist",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin reciclaje.html -d dist --htmlmin -o dist/reciclaje.html",
-    "build": "npm run clean && npm run scss & npm run imagemin && npm run usemin"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -32,13 +25,19 @@
   },
   "devDependencies": {
     "copyfiles": "^2.4.0",
-    "cssmin": "^0.4.3",
-    "htmlmin": "0.0.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-usemin": "^0.3.30",
     "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "rimraf": "^3.0.2",
-    "uglify-js": "^3.11.2",
-    "usemin-cli": "^0.6.0"
+    "rimraf": "^3.0.2"
   }
 }
