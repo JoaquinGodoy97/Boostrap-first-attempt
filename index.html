@@ -6,11 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- build:css css/style.css-->
-  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" />
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- endbuild -->
+<!-- build:css css/index.css -->
+<link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- endbuild -->
+<!-- build:css css/style.css -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- endbuild -->
 
   <title>Blog de prueba</title>
 </head>
@@ -65,19 +67,19 @@
 
         <div class="blog-card-header col-sm-4 collapse multi-collapse" data-toggle="collapse" id="queSonPlantas">
           <p>
-          <h3>¿Qué son las plantas de jardín?</h1>
-            <p>
-              <i>
-                Las plantas de jardín son mayormente encontradas en nuestros hogares, en jardines hogareños.
-              </i>
-            </p>
-            </p>
+          <h3>¿Qué son las plantas de jardín?</h3>
+          <p>
+            <i>
+              Las plantas de jardín son mayormente encontradas en nuestros hogares, en jardines hogareños.
+            </i>
+          </p>
+          </p>
         </div>
         <div class="blog-card-header col-sm-4 collapse multi-collapse" data-toggle="collapse" id="wildPlants">
           <p>
             <i>
-              <h3>¿Plantas salvajes?</h1>
-                <p>Son las plantas que nos encontramos fuera de nuestros hogares, mayormente hierbas.
+              <h3>¿Plantas salvajes?</h3>
+              <p>Son las plantas que nos encontramos fuera de nuestros hogares, mayormente hierbas.
             </i>
           </p>
           </p>
@@ -237,7 +239,8 @@
               <p class="card-text">Recibiras un correo de confirmacion de subscripcion dentro de las 72hs</p>
             </div>
             <div class="col-sm-12 text-center">
-              <button id="contactoBtn" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">Contacta</button>
+              <button id="contactoBtn" class="btn btn-outline-dark" data-toggle="modal"
+                data-target="#exampleModal">Contacta</button>
             </div>
           </div>
           <div class="col-sm-4"></div>
@@ -283,7 +286,7 @@
           <h4><span class="oi oi-wifi pr-3"></span>Redes</h4>
           <a class="text-black" href="www.facebok.com">Face</a>
           <a class="text-black" href="www.twitter.com">Twitter</a>
-              <a class="text-black" href="www.instragram.com">Instagram</a>
+          <a class="text-black" href="www.instragram.com">Instagram</a>
         </div>
         <div class="col-sm-4 flex-wrap flex-column footerColumn">
           <address>
@@ -303,13 +306,17 @@
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  
-  <!-- build:js js/optimized.js -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="./js/main.js"></script>
-  <!-- endbuild -->
-  
-  </body> 
-</html> 
+
+<!-- build:js js/ref.js -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/index.js -->
+<script src="./js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>

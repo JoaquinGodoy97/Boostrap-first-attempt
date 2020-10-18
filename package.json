@@ -1,11 +1,31 @@
 {
   "name": "first-repository",
   "version": "1.0.0",
-  "description": "Primer projecto de Node Js",
+  "description": "Primer repositorio",
   "main": "index.html",
+  "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "bootstrap": "^4.5.3",
+    "concurrently": "^5.3.0",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.5.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "open-iconic": "^1.1.1",
+    "rimraf": "^3.0.2"
+  },
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "imagemin": "imagemin \"./css/images/*\" --out-dir \"./dist/css/images\"",
+    "clean": "rimraf ./dist",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin reciclaje.html -d dist --htmlmin -o dist/reciclaje.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -13,31 +33,5 @@
   },
   "author": "Joaquin Godoy",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/JoaquinGodoy/first-repository#readme",
-  "dependencies": {
-    "@popperjs/core": "^2.5.3",
-    "bootstrap": "^4.5.2",
-    "concurrently": "^5.3.0",
-    "imagemin-cli": "^6.0.0",
-    "jquery": "^3.5.1",
-    "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
-  },
-  "devDependencies": {
-    "copyfiles": "^2.4.0",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-flatmap": "^1.0.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-rev": "^9.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglify-es": "^2.0.0",
-    "gulp-usemin": "^0.3.30",
-    "lite-server": "^2.5.4",
-    "onchange": "^7.0.2",
-    "rimraf": "^3.0.2"
-  }
+  "homepage": "https://bitbucket.org/JoaquinGodoy/first-repository#readme"
 }
