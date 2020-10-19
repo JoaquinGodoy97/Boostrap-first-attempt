@@ -7,19 +7,24 @@
     "@popperjs/core": "^2.5.3",
     "bootstrap": "^4.5.3",
     "concurrently": "^5.3.0",
+    "cssmin": "^0.4.3",
     "jquery": "^3.5.1",
     "lite-server": "^2.5.4"
   },
   "devDependencies": {
+    "htmlmin": "0.0.7",
+    "imagemin-cli": "^6.0.0",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
     "open-iconic": "^1.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.11.3",
+    "usemin-cli": "^0.6.0"
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "imagemin": "imagemin \"./css/images/*\" --out-dir \"./dist/css/images\"",
