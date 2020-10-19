@@ -14,4 +14,19 @@
 
       });
 
+      $('#exampleModal').on('shown.bs.modal',function(e){
+        console.log('El modal se mostro');
+      });
+      
+      $('#exampleModal').on('hide.bs.modal',function(e){
+        console.log('El modal se oculta');
+      });
+
+      $('#exampleModal').on('hidden.bs.modal',function(e){
+        console.log('El modal se oculto');
+        $('#contactoBtn').removeClass('btn-outline-success');
+        $('#contactoBtn').addClass('btn-outline-dark');
+        $('#contactoBtn').prop('disabled', false);
+      });
+
     });
